@@ -26,12 +26,14 @@
         "argsIgnorePattern": "^_"
       }
     ],
+    "@typescript-eslint/ban-ts-comment": 0,
     "no-console": [
       1,
       {
         "allow": ["warn", "error"]
       }
     ],
+    "no-case-declarations": 0,
     "import/order": [
       "error",
       {

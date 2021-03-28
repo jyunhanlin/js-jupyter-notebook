@@ -42,9 +42,7 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) => {
         <Box height="100%" flexGrow={1} backgroundColor="white">
           {!bundle || bundle.loading ? (
             <Flex width="100%" height="100%" alignItems="center" px="10%">
-              <Progress size="sm" isIndeterminate width="100%" borderRadius="5px" max={100}>
-                Loading
-              </Progress>
+              <Progress size="md" isIndeterminate width="100%" borderRadius="5px" max={100} />
             </Flex>
           ) : (
             <Preview code={bundle.code} err={bundle.err} />

@@ -1,0 +1,2 @@
+(this["webpackJsonpmy-cra-with-chakra-ts"]=this["webpackJsonpmy-cra-with-chakra-ts"]||[]).push([[421],{690:function(s,a){var t=Prism.util.clone(Prism.languages.typescript);Prism.languages.tsx=Prism.languages.extend("jsx",t)}}]);
+//# sourceMappingURL=421.701ad677.chunk.js.map

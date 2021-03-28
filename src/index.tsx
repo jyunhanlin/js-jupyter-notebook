@@ -1,5 +1,4 @@
-import { ChakraProvider } from '@chakra-ui/react';
-import React from 'react';
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
@@ -8,8 +7,14 @@ import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 import { store } from './state';
 
+const theme = extendTheme({
+  config: {
+    initialColorMode: 'dark',
+  },
+});
+
 ReactDOM.render(
-  <ChakraProvider>
+  <ChakraProvider theme={theme}>
     <Provider store={store}>
       <CellList />
     </Provider>

@@ -1,16 +1,19 @@
-import { ColorModeScript } from '@chakra-ui/react';
+import { ChakraProvider } from '@chakra-ui/react';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 
-import { App } from './App';
+import CellList from './components/CellList';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
+import { store } from './state';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <ColorModeScript />
-    <App />
-  </React.StrictMode>,
+  <ChakraProvider>
+    <Provider store={store}>
+      <CellList />
+    </Provider>
+  </ChakraProvider>,
   document.getElementById('root'),
 );
 

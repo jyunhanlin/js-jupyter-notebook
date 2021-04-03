@@ -20,7 +20,6 @@ npm start
 - TypeScript
 - Chakra-UI
 
-
 ## Road map
 
 - [x] GitHub Actions for GitHub Pages

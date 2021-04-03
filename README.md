@@ -5,7 +5,11 @@ Ref to [Udemy course](https://www.udemy.com/course/react-and-typescript-build-a-
 ### Install
 
 ```sh
-npm install
+npm install -f
+
+or
+
+npm i -f
 ```
 
 ### Development
@@ -22,6 +26,5 @@ npm start
 
 ## Road map
 
-- [x] GitHub Actions for GitHub Pages
-- [ ] Show console log on the screen
+- [x] GitHub Actions for GitHub Pages only for tags
 - [ ] Dark mode switch

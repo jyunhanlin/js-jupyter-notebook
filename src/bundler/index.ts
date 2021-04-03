@@ -9,7 +9,7 @@ const bundle = async (rawCode: string) => {
   if (!isServerInit) {
     await esbuild.initialize({
       worker: true,
-      wasmURL: 'https://unpkg.com/esbuild-wasm@0.10.2/esbuild.wasm',
+      wasmURL: 'https://unpkg.com/esbuild-wasm@0.11.5/esbuild.wasm',
     });
 
     isServerInit = true;

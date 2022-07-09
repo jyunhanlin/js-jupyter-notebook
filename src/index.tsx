@@ -1,4 +1,5 @@
-import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+import { ChakraProvider } from '@chakra-ui/react';
+import { Global } from '@emotion/react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
@@ -7,14 +8,15 @@ import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 import { store } from './state';
 
-const theme = extendTheme({
-  config: {
-    initialColorMode: 'dark',
-  },
-});
-
 ReactDOM.render(
-  <ChakraProvider theme={theme}>
+  <ChakraProvider>
+    <Global
+      styles={{
+        body: {
+          backgroundColor: '#2D3748',
+        },
+      }}
+    />
     <Provider store={store}>
       <CellList />
     </Provider>
